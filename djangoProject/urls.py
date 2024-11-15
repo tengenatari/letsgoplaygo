@@ -20,4 +20,6 @@ from letsgoplaygo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('get_users', views.get_users, name='get_users'),
+    path('authpage', views.create_user, name='create')
 ]

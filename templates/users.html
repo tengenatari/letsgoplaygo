@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <table class="table caption-top">
+  <caption>List of users</caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nickname</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+    <tbody>
+{% for user in users %}
+    <tr>
+<td>
+{{ user.id }}
+</td>
+<td>
+{{ user.username }}
+</td>
+    </tr>
+{{ user.mail }}
+</td>
+{% endfor %}
+    </tbody>
+</table>
+{% endblock body %}

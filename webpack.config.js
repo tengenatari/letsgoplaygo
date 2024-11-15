@@ -1,4 +1,3 @@
-// Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -25,8 +24,6 @@ const config = {
     plugins: [
         new MiniCssExtractPlugin(),
 
-        // Add your plugins here
-        // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ],
     module: {
         rules: [

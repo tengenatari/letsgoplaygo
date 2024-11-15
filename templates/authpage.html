@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+{{ form.errors }}
+    <form method="post" action="/signup">
+    {% csrf_token %}
+{{ form }}
+    <input type="submit">
+    </form>
+{% endblock body %}
